@@ -62,7 +62,7 @@ export function checkPackageNodeVersionSupported(packageName: string) {
         console.error(
             chalk.red(
                 'You are running Node %s.\n' +
-                'Create Web App requires Node %s or higher. \n' +
+                'Unlimited Blade Works requires Node %s or higher. \n' +
                 'Please update your version of Node.'
             ),
             process.version,

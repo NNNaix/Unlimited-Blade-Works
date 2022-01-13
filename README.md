@@ -40,7 +40,7 @@
  - [开始创建](#user-content--开始创建) - 如何创建一个你想要的项目。
  - [开发者指南][dev-doc-url] -  如何为脚手架添加模板以及功能。
 
-对于 Create Web App 的支持情况：
+对于 Unlimited Blade Works 的支持情况：
  - 操作系统：macOS，Windows 以及 Linux
  - 包管理器：npm，yarn，pnpm（不支持 yarn 2 aka yarn berry，原因见 [常见问题列表][faq-url]
  - node版本：>=10（以 package.json 中的 engines.node 字段为准）
