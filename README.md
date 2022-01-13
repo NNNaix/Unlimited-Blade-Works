@@ -3,6 +3,7 @@
 
 [![NPM version][npm-image]][npm-url] [![NPM downloads][download-image]][npm-url] [![js-standard-style][standard-image]][standard-url] [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)][repository-url] [![Status](https://img.shields.io/badge/status-active-success.svg)][repository-url]
 
+
 </div>
 
 > 此身為劍所成
@@ -23,9 +24,9 @@
 >
 > "無限劍制"
 
-[npm-image]: http://img.shields.io/npm/v/@cyber-bones/create-web-app.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/@cyber-bones/create-web-app
-[download-image]: https://img.shields.io/npm/dm/@cyber-bones/create-web-app.svg?style=flat-square
+[npm-image]: http://img.shields.io/npm/v/create-unlimited-blade-works.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/create-unlimited-blade-works
+[download-image]: https://img.shields.io/npm/dm/create-unlimited-blade-works.svg?style=flat-square
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [standard-url]: http://standardjs.com/
 [repository-url]: TODO
@@ -54,39 +55,39 @@
 
 ## 🏁 快速上手
 ```zsh
-npx @cyber-bones/create-web-app
+npx create-unlimited-blade-works
 ```
-为了永远使用最新的版本，不要通过全局安装来使用。如果你之前全局安装过 `@cyber-bones/create-web-app`，我们推荐你使用下面的命令卸载全局的安装：
+为了永远使用最新的版本，不要通过全局安装来使用。如果你之前全局安装过 `create-unlimited-blade-works`，我们推荐你使用下面的命令卸载全局的安装：
 
-- **npm**: `npm uninstall -g @cyber-bones/create-web-app`
-- **yarn**: `yarn global remove @cyber-bones/create-web-app`
-- **pnpm**: `pnpm remove -g @cyber-bones/create-web-app`
+- **npm**: `npm uninstall -g create-unlimited-blade-works`
+- **yarn**: `yarn global remove create-unlimited-blade-works`
+- **pnpm**: `pnpm remove -g create-unlimited-blade-works`
 
 
 ##  🌱 开始创建
 你可以使用下面任意的方式来创建项目
 ### npx
 ```
-npx @cyber-bones/create-web-app
+npx create-unlimited-blade-works
 ```
 _npx 是 npm 版本 >=5.2 后开箱自带的包运行工具，请升级 npm 以满足最低 >= 5.2。_
 
 
 ### npm
 ```
-npm init @cyber-bones/web-app
+npm init unlimited-blade-works
 ```
 _npm 版本 >= 6 时 `npm init <initializer>`  可用。_
 
 ### yarn
 ```
- yarn create @cyber-bones/web-app
+ yarn create unlimited-blade-works
 ```
 _Yarn 版本 >= 0.25 时 `yarn create <starter-kit-package>` 可用。_
 
 ### pnpm
 ```
-pnpm init @cyber-bones/web-app
+pnpm init @unlimited-blade-works
 ```
 _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
 ## ⚙️ 参数选项
@@ -97,7 +98,7 @@ _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
 - 描述：仅输出环境调试信息，不执行初始化。
 - 示例：
   ```
-  npx @cyber-bones/create-web-app --info
+  npx create-unlimited-blade-works --info
   ```
 ### `--clean`
 - 参数类型：`boolean`
@@ -105,7 +106,7 @@ _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
 - 描述：仅清理本地缓存数据，不执行初始化。
 - 示例：
   ```
-  npx @cyber-bones/create-web-app --clean
+  npx create-unlimited-blade-works --clean
   ```
 
 ### `--registry <registry>`
@@ -114,7 +115,7 @@ _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
 - 描述：设置初始化项目过程中使用的注册源。
 - 示例
   ```
-  npx @cyber-bones/create-web-app --registry registry.npm.taobao.org
+  npx create-unlimited-blade-works --registry registry.npm.taobao.org
   ```
   
 
@@ -125,7 +126,7 @@ _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
 - 描述：设置项目初始化的根目录，<rootDirectory> 为绝对路径。
 - 示例：
   ```
-  npx @cyber-bones/create-web-app --root-directory /apps
+  npx create-unlimited-blade-works --root-directory /apps
   ```
 ### `--remote-repo <remoteRepo>`
 - 参数类型：`string`
@@ -133,7 +134,7 @@ _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
 - 描述：设置项目的 git 远程仓库地址。
 - 示例：
   ```
-  npx @cyber-bones/create-web-app --remote-repo https://github.com/NNNaix/cyber-bones-cli-web-app-example
+  npx create-unlimited-blade-works --remote-repo https://github.com/NNNaix/cyber-bones-cli-web-app-example
   ```
 
 
@@ -143,7 +144,7 @@ _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
 - 描述：脚手架默认基于远程注册源 `registry` 获取数据，为 `true` 时启用离线模式，将使用本地缓存数据来替代远程注册源。
 - 示例：
   ```
-  npx @cyber-bones/create-web-app --offline
+  npx create-unlimited-blade-works --offline
   ```
 
 ### `--override`
@@ -152,7 +153,7 @@ _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
 - 描述：脚手架默认使用安全的写入策略，如果项目初始化目录存在白名单以外的文件则警告并终止写入，为 `true` 时启用覆写模式，会强制覆盖掉和模板产生冲突的文件。
 - 示例：
   ```
-  npx @cyber-bones/create-web-app --override
+  npx create-unlimited-blade-works --override
   ```
 
 ### `--auto-registry`
@@ -164,7 +165,7 @@ _npm 版本 >= 6 时 `pnpm init <initializer>`  可用。_
   - `registry.yarnpkg.com`
 - 示例：
   ```
-  npx @cyber-bones/create-web-app --auto-registry
+  npx create-unlimited-blade-works --auto-registry
   ```
   
 ## 📖 开发者指南
